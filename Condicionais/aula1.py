@@ -32,3 +32,21 @@ else :
   print("menor de idade")
 
 
+# 2) Usando estruturas condicionais implemente uma calculadora básica. O usuário deve informar os valores de entrada e a operação que deseja.
+
+a = 3
+b = 5
+
+operacao = 3 + 5
+
+if (operacao == a + b):
+  print("soma")
+elif (operacao == a * b):
+  print("multiplicação")
+elif (operacao == a / b):
+  print("divisão")
+else :
+  print("subtração")
+
+
+
