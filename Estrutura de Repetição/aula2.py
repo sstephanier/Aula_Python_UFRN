@@ -1,7 +1,5 @@
 # Utilizando o comando While (estrutura de repetição) faça um programa em Python que dado um número inteiro positivo qualquer informado pelo usuário ele informa se o número é ou não primo.
-
 # Caso o usuário informe um número negativo o sistema deve informar que não há números primos negativos.
-
 # Depois o programa deve em Python deve ser enviado pelo SIGAA.
 
 #Declarando as váriaveis
@@ -27,3 +25,30 @@ elif (número == 1) or (número == 0): # testes complementare para ajudar o usu�
   print("Você não digitou um número inteiro positivo maior que 1")
 else:
    print("Não há números primos negativos, por exemeplo igual a " + str(número))
+
+# Faça um programa em Python que dado um intervalo entre 1 a N informa quantos números ímpares são múltiplos de 3, onde N é informado pelo usuário.
+
+#Declarando as váriaveis
+número = int(input ("Digite um número inteiro positivo maior que 1: ")) #recebe o número e converte para inteiro
+cont = 0
+
+print("\n")
+
+for i in range(1, número+1):
+  if (i%2!=0) and (i%3==0):
+    print ("["+ str (i) + "] é um número impar multiplo de 3")
+    cont+=1
+
+print("\n")
+print ("Entre [1 e "+str(número)+ "] existem "+str(cont)+ " números impares multiplos de 3")
+
+# Faça um programa em Python, utilizando While que calcula o fatorial de um número. Por exemplo: 5! = 5 x 4 x 3 x 2 x 1 = 120.
+
+#Declarando as váriaveis
+número = int(input ("Digite um número inteiro positivo maior que 1: ")) #recebe o número e converte para inteiro
+fatorial = 1
+
+for i in range(1, número+1):
+  fatorial *= i # Essa expressão é igual a  fatorial =  fatorial * i
+
+print("O fatorial de "+str(número)+ " é igual a : " + str(fatorial))
